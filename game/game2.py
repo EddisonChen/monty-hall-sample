@@ -21,11 +21,11 @@ def switch_doors():
         win_door = random.choice([1, 2, 3])
         if win_door == selected_door:
             if win_door == 1 and selected_door == 1:
-                selected_door = random.randint(2, 3)
+                selected_door = random.choice([2, 3])
             elif win_door == 2 and selected_door == 2:
-                selected_door = random.randint(1, 3)
+                selected_door = random.choice([1, 3])
             elif win_door == 3 and selected_door == 3:
-                selected_door = random.randint(1, 2)
+                selected_door = random.choice([1, 2])
         elif win_door != selected_door:
             if win_door == 1 and selected_door == 2:
                 selected_door = 1
