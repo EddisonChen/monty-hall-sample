@@ -12,7 +12,7 @@ def run_trial(win_door, selected_door):
 
 def print_results():
     win_percentage = sum(list(wins))/(sum(list(wins)) + sum(list(losses)))
-    print(win_percentage)
+    print(f"Always switching, your win percentage is {win_percentage}%")
 
 def switch_doors():
     i = 0
